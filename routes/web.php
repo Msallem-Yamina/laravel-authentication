@@ -20,4 +20,18 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard/admin', function () {
+        return view('dashboard.admin'); 
+    })->middleware('role:admin')->name('dashboard.admin');
+
+    Route::get('/dashboard/user', function () {
+         return view('dashboard.user');
+     })->middleware('role:user')->name('dashboard.user');
+
+    Route::get('/unauthorized', function () {
+        return view('unauthorized');
+    })->name('unauthorized');
+});
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->middleware('auth')->name('home');

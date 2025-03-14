@@ -3,7 +3,7 @@
 @section('content')
 <section class="login position-relative z-3 d-flex justify-content-center align-items-center min-vh-100 bg-light">
         <div class="bg-gray p-4 rounded shadow" >
-            <h2 class="text-center text-primary mb-3">{{ __('Login') }}</h2>
+            <h2 class="text-center text-primary mb-4 fw-bold">{{ __('Login') }}</h2>
                 <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="row mb-3">

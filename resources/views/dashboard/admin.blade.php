@@ -7,9 +7,9 @@
                     {{ session('status') }}
                 </div>
             @endif
-            <h6 class="py-2">Welcome to your dashboard!</h6>
+            <h6 class="py-2">Welcome to Admin Dashboard!</h6>
             <p>{{ __('You are logged in as:') }} 
-                <strong>{{ Auth::user()->name ?? 'Guest' }}</strong>
+                <strong>{{ Auth::user()->name ?? 'Admin' }}</strong>
             </p>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-inline">
                 @csrf
@@ -18,4 +18,5 @@
                 </button>
             </form>                  
 </section>
+
 @endsection

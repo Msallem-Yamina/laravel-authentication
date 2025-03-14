@@ -1,11 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="register">
-    <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
+<section class="register position-relative z-3 d-flex justify-content-center align-items-center min-vh-100 bg-light">
+    <div class="bg-gray p-4 rounded shadow">
+                <h2 class="text-center text-primary mb-4 fw-bold">{{ __('Register') }}</h2>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -67,7 +65,6 @@
                             </div>
                         </div>
                     </form>
-                </div>
             </div>        
 </section>
 @endsection

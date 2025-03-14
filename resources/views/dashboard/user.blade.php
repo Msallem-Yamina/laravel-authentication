@@ -7,7 +7,7 @@
                     {{ session('status') }}
                 </div>
             @endif
-            <h6 class="py-2">Welcome to your dashboard!</h6>
+            <h6 class="py-2">Welcome to User Dashboard!</h6>
             <p>{{ __('You are logged in as:') }} 
                 <strong>{{ Auth::user()->name ?? 'Guest' }}</strong>
             </p>
@@ -18,4 +18,5 @@
                 </button>
             </form>                  
 </section>
+
 @endsection

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>NGO | Business Card Portfolio - Digi vCard</title>
-	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link rel="icon" href="{{ asset('assets/images/favicon/icon.png') }}">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 	 <!-- CSS Files -->
@@ -21,32 +21,33 @@
     <div id="app">
         <!-- Background images start -->
 		<div class="background-img">
-			<img src="assets/images/main-img/shape1.png" alt="shape-img" class="shape1">
-			<img src="assets/images/main-img/shape2.png" alt="shape-img" class="shape2">
-			<img src="assets/images/main-img/shape3.png" alt="shape-img" class="shape3">
+        <img src="{{ asset('assets/images/main-img/shape1.png') }}" alt="shape-img" class="shape1">
+        <img src="{{ asset('assets/images/main-img/shape2.png') }}" alt="shape-img" class="shape2">
+        <img src="{{ asset('assets/images/main-img/shape3.png') }}" alt="shape-img" class="shape3">
+
 		</div>
         <header>
             <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="assets/svg/logo.svg" alt="logo">
+                        <img src="{{ asset('assets/svg/logo.svg') }}" alt="logo">
                     </a>
                     <div class="language-sec">
 							<div class="dropdown">
 								<button class="btn dropdown-toggle custom-language-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-									<img src="assets/svg/language-icon.svg" alt="icon">En
+									<img src="{{ asset('assets/svg/language-icon.svg') }}" alt="icon">En
 								</button>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="assets/images/flag/flag1.png" alt="flag-img">English</a></li>
-									<li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="assets/images/flag/flag2.png" alt="flag-img">Italian</a></li>
-									<li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="assets/images/flag/flag3.png" alt="flag-img">Turkish</a></li>
-									<li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="assets/images/flag/flag4.png" alt="flag-img">Arabic</a></li>
-									<li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="assets/images/flag/flag5.png" alt="flag-img">German</a></li>
-									<li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="assets/images/flag/flag6.png" alt="flag-img">Portugise</a></li>
-									<li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="assets/images/flag/flag7.png" alt="flag-img">Français</a></li>
-									<li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="assets/images/flag/flag8.png" alt="flag-img">Spanish</a></li>
-									<li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="assets/images/flag/flag9.png" alt="flag-img">Russian</a></li>
-									<li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="assets/images/flag/flag10.png" alt="flag-img">Chienese</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="{{ asset('assets/images/flag/flag1.png') }}" alt="flag-img">English</a></li>
+                                    <li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="{{ asset('assets/images/flag/flag2.png') }}" alt="flag-img">Italian</a></li>
+                                    <li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="{{ asset('assets/images/flag/flag3.png') }}" alt="flag-img">Turkish</a></li>
+                                    <li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="{{ asset('assets/images/flag/flag4.png') }}" alt="flag-img">Arabic</a></li>
+                                    <li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="{{ asset('assets/images/flag/flag5.png') }}" alt="flag-img">German</a></li>
+                                    <li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="{{ asset('assets/images/flag/flag6.png') }}" alt="flag-img">Portuguese</a></li>
+                                    <li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="{{ asset('assets/images/flag/flag7.png') }}" alt="flag-img">Français</a></li>
+                                    <li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="{{ asset('assets/images/flag/flag8.png') }}" alt="flag-img">Spanish</a></li>
+                                    <li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="{{ asset('assets/images/flag/flag9.png') }}" alt="flag-img">Russian</a></li>
+                                    <li class="mt-5"><a class="dropdown-item" href="javascript:void(0)"><img class="flag-icon" src="{{ asset('assets/images/flag/flag10.png') }}" alt="flag-img">Chinese</a></li>
 								</ul>
 							</div>
 						</div>
@@ -55,14 +56,7 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Left Side Of Navbar -->
-                        <ul class="navbar-nav me-auto">
-
-                        </ul>
-
-                        <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ms-auto">
-                            <!-- Authentication Links -->
                             @guest
                                 @if (Route::has('login'))
                                     <li class="nav-item">
@@ -76,7 +70,11 @@
                                     </li>
                                 @endif
                             @else
-                                <li><a href="{{ url('/home') }}" class="nav-link">Home</a></li>
+                            @if (Auth::user()->role === 'admin')
+                                <li><a href="{{ route('dashboard.admin') }}" class="nav-link"> Dashboard</a></li>
+                            @else
+                                <li><a href="{{ route('dashboard.user') }}" class="nav-link"> Dashboard</a></li>
+                            @endif
                             @endguest
                         </ul>
                     </div>
@@ -86,9 +84,10 @@
         <main>
             @yield('content')
         </main>
-        <div class="footer mt-10">
+        <!-- Footer -->
+        <footer class="footer mt-10">
 			<p>Made By Digi vCard Builder 💖 The_Krishna</p>
-		</div>
+		</footer>
     </div>
 
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
