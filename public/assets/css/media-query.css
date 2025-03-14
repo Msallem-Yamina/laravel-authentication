@@ -1,0 +1,68 @@
+@media (max-width: 991px) {
+	.background-img{
+		display: none;
+	}
+}
+@media (max-width: 370px) {
+	.scan-btn{
+		width: 50px;
+		height: 50px;
+	}
+	.scan-btn img{
+		width: 30px;
+		height: 30px;
+	}
+}
+@media (max-width: 320px) {
+	.scan-btn img {
+		width: 24px;
+		height: 24px;
+	}
+	.scan-btn{
+		width: 48px;
+		height: 48px;
+	}
+	.plus-btn{
+		padding: 10px;
+	}
+	.mt-30{
+		margin-top: 25px;
+	}
+	.scan-content {
+		width: 100%;
+		height: auto;
+	}
+	.scanner img{
+		width: 100%;
+		height: auto;
+	}
+	.client-name{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.bottom-client-details h3{
+		font-size: 16px;
+	}
+	.add-to-btn-sec{
+		padding: 6px 6px 6px 18px;
+	}
+	.hero-bottom-sec{
+		margin-top: 15px;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+}
+@media (max-width: 280px) {
+	.add-to-contact-wrap{
+		flex-wrap: wrap;
+	}
+	.add-to-btn{
+		margin-left: inherit;
+	}
+	.qr-btn{
+		flex-wrap: wrap;
+	}
+	.btn1 {
+		width: 100%;
+	}
+}
